@@ -13,41 +13,45 @@ body{
   height: 75rem;
   background-image: url('../images/sec1-main-bg.png');
   background-size: cover;
+  .main-cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 40, 74, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-nav{
+      width: 110rem;
+      height: 10rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
-.main-cover{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(37, 40, 74, 0.9);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.main-nav{
-  width: 110rem;
-  height: 10rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-}
+
+
 .main-logo-link{
   height: 10rem;
   text-decoration: none;
   color: #fff;
   display: flex;
+  p{
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #737590;
+    span{
+      font-weight: 300;
+      color: #fff;
+    }
+  }
 }
-.main-logo-link > p{
-  text-transform: uppercase;
-  margin: auto;
-  font-size: 3.2rem;
-  font-weight: 800;
-  color: #737590;
-}
-.main-logo-link > p > span{
-  font-weight: 300;
-  color: #fff;
-}
+
+
 .main-nav > ul{
   display: flex;
   flex-direction: row;
@@ -107,20 +111,22 @@ body{
   transition: 0.4s;
   -moz-transition: 0.4s;
   -webkit-transition: 0.4s;
+  a{
+    width: 20rem;
+    height: 4.6rem;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    p{
+      margin: auto;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+  }
 }
-#main-button > a{
-  width: 20rem;
-  height: 4.6rem;
-  display: flex;
-  color: #fff;
-  text-decoration: none;
-}
-#main-button > a > p{
-  margin: auto;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.3rem;
-}
+
+
 #main-button:hover{
   background-color: #fff;
 }
