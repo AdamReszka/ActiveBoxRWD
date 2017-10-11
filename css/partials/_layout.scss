@@ -149,7 +149,7 @@ body{
   flex-direction: column;
   align-items: center;
   width: 30rem;
-  margin: 2.9rem 4rem;
+  margin: 2.9rem 4rem 4.1rem 4rem;
   cursor: pointer;
   &:hover{
     .pb-img-cont{
@@ -189,17 +189,107 @@ body{
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.4rem;
+  margin-top: 1.4rem;
 }
 .pb-item-desc{
-  font-size: 1.4rem;
-  line-height: 2rem;
-  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  margin-top: 2rem;
   font-weight: 400;
   color: #5e5e5e;
   text-align: center;
 }
 #sec3-images{
- background-color: green;
+ display: flex;
+ flex-direction: row;
+ .gallery-box{
+   display: flex;
+   flex-direction: row;
+   width: 50%;
+   height: 70rem;
+   .gallery-box-column{
+     width: 50%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     .gallery-box-item{
+       width: 100%;
+       height: 50%;
+       background-size: cover;
+
+       .gbi-link{
+         width: 100%;
+         height: 100%;
+         display: flex;
+         position: relative;
+         transition: 0.4s;
+         -moz-transition: 0.4s;
+         -webkit-transition: 0.4s;
+         overflow: hidden;
+         .gbi-item-title{
+           color: #fff;
+           position: absolute;
+           margin-left: auto;
+           margin-right: auto;
+           left: 0;
+           right: 0;
+           text-align: center;
+           transition: 0.4s;
+           -moz-transition: 0.4s;
+           -webkit-transition: 0.4s;
+         }
+         .gbi-it-top{
+           width: 11rem;
+           top: -10rem;
+           font-weight: 700;
+           font-size: 1.4rem;
+           text-transform: uppercase;
+         }
+         .gbi-it-sub{
+           width: 14rem;
+           bottom: -10rem;
+           font-weight: 400;
+           font-size: 1.4rem;
+         }
+       }
+       &:hover{
+         .gbi-link{
+           background-color: rgba(232, 68, 69, 0.9);
+           .gbi-it-top{
+             top: 15.4rem;
+           }
+           .gbi-it-sub{
+             bottom: 15.4rem;
+           }
+         }
+       }
+     }
+     .gb-item1{
+       background-image: url('../images/sec3-photo1.png');
+     }
+     .gb-item2{
+       background-image: url('../images/sec3-photo5.png');
+     }
+     .gb-item3{
+       background-image: url('../images/sec3-photo2.png');
+     }
+     .gb-item4{
+       background-image: url('../images/sec3-photo6.png');
+     }
+     .gb-item5{
+       background-image: url('../images/sec3-photo3.png');
+     }
+     .gb-item6{
+       background-image: url('../images/sec3-photo7.png');
+     }
+     .gb-item7{
+       background-image: url('../images/sec3-photo4.png');
+     }
+     .gb-item8{
+       background-image: url('../images/sec3-photo8.png');
+     }
+   }
+ }
 }
 #sec4-people{
 
