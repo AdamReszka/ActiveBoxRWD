@@ -82,7 +82,7 @@ body{
   margin-right: 0;
 }
 .main-nav > ul > li:hover > a > p{
-  color: #e84546;
+  color: $abred;
 }
 .main-title{
   color: #fff;
@@ -106,7 +106,7 @@ body{
   width: 20rem;
   height: 4.6rem;
   border-radius: 0.1rem;
-  background-color: #e84546;
+  background-color: $abred;
   margin-top: 5rem;
   transition: 0.4s;
   -moz-transition: 0.4s;
@@ -131,7 +131,7 @@ body{
   background-color: #fff;
 }
 #main-button:hover > a > p{
-  color: #e84546;
+  color: $abred;
 }
 #sec2-points{
  display: flex;
@@ -292,7 +292,89 @@ body{
  }
 }
 #sec4-people{
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0 10rem 0;
+  .people-box{
+    display: flex;
+    flex-direction: row;
+    .people-box-item{
+      display:flex;
+      flex-direction: column;
+      margin: 0 1.5rem;
+      width: 27rem;
+    }
+  }
+}
+.people-photo{
+  width: 27rem;
+  height: 27rem;
+  background-color: green;
+  background-size: cover;
+}
+.pp1{
+  background-image: url('../images/sec4-person1.png');
+}
+.pp2{
+  background-image: url('../images/sec4-person2.png');
+}
+.pp3{
+  background-image: url('../images/sec4-person3.png');
+}
+.pp4{
+  background-image: url('../images/sec4-person4.png');
+}
+h4.person-name{
+  font-size: 2.2rem;
+  margin-top: 2.8rem;
+}
+.person-job{
+  text-transform: uppercase;
+  color: $abred;
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+}
+.person-desc{
+  color: #5e5e5e;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin-top: 2.2rem;
+}
+.person-socials{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.7rem;
+  .ps-item{
 
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    margin-right: 0.4rem;
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    border-radius: 0.1rem;
+    a{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      i{
+        margin: auto;
+        color: #c6c6c6;
+        font-size: 1.8rem;
+      }
+    }
+
+    &:hover{
+      background-color: $abred;
+      i{
+        color: #fff;
+      }
+    }
+  }
 }
 #sec5-opinion{
   background-color: #523549;
